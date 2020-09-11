@@ -24,9 +24,9 @@ public class VideoCaptureController {
      * Values for width, height and fps (respectively) which will be
      * used to open the camera at.
      */
-    private final int width;
-    private final int height;
-    private final int fps;
+    private final int width = 256;
+    private final int height = 144;
+    private final int fps = 30;
 
     private CameraEnumerator cameraEnumerator;
 
@@ -47,9 +47,9 @@ public class VideoCaptureController {
     public VideoCaptureController(CameraEnumerator cameraEnumerator, ReadableMap constraints) {
         this.cameraEnumerator = cameraEnumerator;
 
-        width = constraints.getInt("width");
-        height = constraints.getInt("height");
-        fps = constraints.getInt("frameRate");
+        // width = constraints.getInt("width");
+        // height = constraints.getInt("height");
+        // fps = constraints.getInt("frameRate");
 
         String deviceId = ReactBridgeUtil.getMapStrValue(constraints, "deviceId");
         String facingMode = ReactBridgeUtil.getMapStrValue(constraints, "facingMode");
