@@ -24,8 +24,8 @@ public class VideoCaptureController {
      * Values for width, height and fps (respectively) which will be
      * used to open the camera at.
      */
-    private final int width = 256;
-    private final int height = 144;
+    private final int width = 640;
+    private final int height = 360;
     private final int fps = 30;
 
     private CameraEnumerator cameraEnumerator;

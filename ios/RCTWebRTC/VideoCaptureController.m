@@ -25,8 +25,8 @@
         _usingFrontCamera = YES;
 
         _deviceId = constraints[@"deviceId"];
-        _width = 256;
-        _height = 144;
+        _width = 640;
+        _height = 360;
         _fps = 30;
 
         id facingMode = constraints[@"facingMode"];
